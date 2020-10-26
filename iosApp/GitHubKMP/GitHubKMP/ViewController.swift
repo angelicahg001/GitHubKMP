@@ -1,17 +1,14 @@
-//
-//  ViewController.swift
-//  GitHubKMP
-//
-//  Created by Jose Luis Cadena on 25/10/20.
-//
-
 import UIKit
+import shared
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var greeting: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        greeting.text = Greeting().greeting()
     }
 
 
